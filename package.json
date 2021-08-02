@@ -19,5 +19,8 @@
   "homepage": "https://github.com/gillianbaker97/Team-Profile-Generator#readme",
   "dependencies": {
     "inquirer": "^8.1.2"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }
