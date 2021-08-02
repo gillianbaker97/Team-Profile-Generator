@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-constWriteFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const promptInfo = () => {
     return inquirer.prompt([
@@ -209,7 +209,7 @@ const promptInfo = () => {
 </html>`;
 
 const init = () => {
-  promptUser()
+  promptInfo()
     .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
     .then(() => console.log('Successfully wrote to index.html'))
     .catch((err) => console.error(err));
