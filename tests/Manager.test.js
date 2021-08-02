@@ -1,4 +1,4 @@
-const Manager = require("../index");
+const Manager = require("../Manager");
 
 describe("Manager", () => {
 

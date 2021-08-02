@@ -1,4 +1,4 @@
-const Employee = require("../index");
+const Employee = require("../Employee");
 
 describe("Employee", () => {
 

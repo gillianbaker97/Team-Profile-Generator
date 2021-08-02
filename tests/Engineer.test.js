@@ -1,4 +1,4 @@
-const Engineer = require("../index");
+const Engineer = require("../Engineer");
 
 describe("Engineer", () => {
 
