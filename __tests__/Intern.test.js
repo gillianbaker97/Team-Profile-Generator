@@ -5,8 +5,8 @@ describe("Intern", () => {
     describe("getName", () => {
         it("should return the name of the parent object", () => {
     
-            const name = "Sam"
-            expect(name).toEqual(Intern.name);
+            //const name = "Sam"
+            expect(Intern.name).toBe("Sam");
         });
     
     });
@@ -14,8 +14,8 @@ describe("Intern", () => {
     describe("getId", () => {
         it("should return the ID number of the parent object", () => {
     
-            const Id = 4
-            expect(Id).toEqual(Intern.id);
+            //const Id = 4
+            expect(Intern.Id).toBe(4);
         });
     
     });
@@ -23,8 +23,8 @@ describe("Intern", () => {
     describe("getEmail", () => {
         it("should return the email address of the parent object", () => {
     
-            const email = "intern@gmail.com"
-            expect(email.toEqual(Intern.email);
+            //const email = "intern@gmail.com"
+            expect(Intern.email).toBe("intern@gmail.com");
         });
     
     });
@@ -32,8 +32,8 @@ describe("Intern", () => {
     describe("getSchool", () => {
         it("should return the school of the parent object", () => {
 
-            const school = "OSU"
-            expect(school).toEqual(Intern.school);
+            //const school = "OSU"
+            expect(Intern.school).toBe("OSU");
         });
     
     });
@@ -41,8 +41,8 @@ describe("Intern", () => {
     describe("getRole", () => {
         it("should return the role of the parent object", () => {
     
-            const Role = "intern"
-            expect(Role).toEqual(Intern.role);
+            //const Role = "intern"
+            expect(Intern.Role).toBe("intern");
         });
     
     });
