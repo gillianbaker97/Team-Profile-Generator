@@ -1,11 +1,12 @@
-const Engineer = require("../Engineer");
+const Engineer = require("../library/Engineer");
 
 describe("Engineer", () => {
 
     describe("getName", () => {
         it("should return the name of the parent object", () => {
     
-            expect("name" in obj).toEqual(parent.name3);
+            const name = "Enny"
+            expect(name).toEqual(Engineer.name);
         });
     
     });
@@ -13,7 +14,8 @@ describe("Engineer", () => {
     describe("getId", () => {
         it("should return the ID number of the parent object", () => {
     
-            expect("id" in obj).toEqual(parent.id3);
+            const Id = 3
+            expect(Id).toEqual(Engineer.id);
         });
     
     });
@@ -21,7 +23,8 @@ describe("Engineer", () => {
     describe("getEmail", () => {
         it("should return the email address of the parent object", () => {
     
-            expect("email" in obj).toEqual(parent.email3);
+            const email = "engineer@gmail.com"
+            expect(email).toEqual(Engineer.email);
         });
     
     });
@@ -29,7 +32,8 @@ describe("Engineer", () => {
     describe("getGit", () => {
         it("should return the GitHub account of the parent object", () => {
     
-            expect("github" in obj).toEqual(parent.github);
+            const git = "e@github"
+            expect(git).toEqual(Engineer.github);
         });
     
     });
@@ -37,7 +41,8 @@ describe("Engineer", () => {
     describe("getRole", () => {
         it("should return the role of the parent object", () => {
     
-            expect("role" in obj).toEqual(parent.role3);
+            const Role = "engineer"
+            expect(Role).toEqual(Engineer.role);
         });
     
     });

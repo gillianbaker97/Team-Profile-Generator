@@ -1,11 +1,12 @@
-const Manager = require("../Manager");
+const Manager = require("../library/Manager");
 
 describe("Manager", () => {
 
     describe("getName", () => {
         it("should return the name of the parent object", () => {
-    
-            expect("name" in obj).toEqual(parent.name2);
+            
+            const name = "Martin"
+            expect(name).toEqual(Manager.name);
         });
     
     });
@@ -13,7 +14,8 @@ describe("Manager", () => {
     describe("getId", () => {
         it("should return the ID number of the parent object", () => {
     
-            expect("id" in obj).toEqual(parent.id2);
+            const Id = 2
+            expect(Id).toEqual(Manager.id);
         });
     
     });
@@ -21,7 +23,8 @@ describe("Manager", () => {
     describe("getEmail", () => {
         it("should return the email address of the parent object", () => {
     
-            expect("email" in obj).toEqual(parent.email2);
+            const email = "manager@gmail.com"
+            expect(email).toEqual(Manager.email);
         });
     
     });
@@ -29,7 +32,8 @@ describe("Manager", () => {
     describe("getofficeNumber", () => {
         it("should return the office number of the parent object", () => {
     
-            expect("office number" in obj).toEqual(parent.officeNumber);
+            const officeNumber = "#"
+            expect(officeNumber).toEqual(Manager.officeNumber);
         });
     
     });
@@ -37,7 +41,8 @@ describe("Manager", () => {
     describe("getRole", () => {
         it("should return the role of the parent object", () => {
     
-            expect("role" in obj).toEqual(parent.role2);
+            const role = "manager"
+            expect(role).toEqual(Manager.role);
         });
     
     });

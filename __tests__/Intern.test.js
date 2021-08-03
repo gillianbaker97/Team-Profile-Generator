@@ -1,11 +1,12 @@
-const Intern = require("../Intern");
+const Intern = require("../library/Intern");
 
 describe("Intern", () => {
 
     describe("getName", () => {
         it("should return the name of the parent object", () => {
     
-            expect("name" in obj).toEqual(parent.name4);
+            const name = "Sam"
+            expect(name).toEqual(Intern.name);
         });
     
     });
@@ -13,7 +14,8 @@ describe("Intern", () => {
     describe("getId", () => {
         it("should return the ID number of the parent object", () => {
     
-            expect("id" in obj).toEqual(parent.id4);
+            const Id = 4
+            expect(Id).toEqual(Intern.id);
         });
     
     });
@@ -21,15 +23,17 @@ describe("Intern", () => {
     describe("getEmail", () => {
         it("should return the email address of the parent object", () => {
     
-            expect("email" in obj).toEqual(parent.email4);
+            const email = "intern@gmail.com"
+            expect(email.toEqual(Intern.email);
         });
     
     });
 
     describe("getSchool", () => {
         it("should return the school of the parent object", () => {
-    
-            expect("school" in obj).toEqual(parent.school);
+
+            const school = "OSU"
+            expect(school).toEqual(Intern.school);
         });
     
     });
@@ -37,7 +41,8 @@ describe("Intern", () => {
     describe("getRole", () => {
         it("should return the role of the parent object", () => {
     
-            expect("role" in obj).toEqual(parent.role4);
+            const Role = "intern"
+            expect(Role).toEqual(Intern.role);
         });
     
     });
