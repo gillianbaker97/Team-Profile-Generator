@@ -1,10 +1,10 @@
-const inquirer = require('inquirer');
+const inquirer = require('inquirer'); //here, we have the main JavaScript page. It calls upon the 'inquirer' package and defines constants here
 const fs = require('fs');
 const util = require('util');
 
-const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile); //we're writing the file
 
-const promptInfo = () => {
+const promptInfo = () => {     //here's the inquirer package notation to define what input we want, the name of the input, and its message
     return inquirer.prompt([
       {
         type: 'input',
@@ -15,13 +15,13 @@ const promptInfo = () => {
       {
         type: 'input',
         name: 'id1',
-        message: 'What is your id?',
+        message: 'What is your id?',  
       },
 
       {
         type: 'input',
         name: 'email1',
-        message: 'What is your email?',
+        message: 'What is your email?',  //what I've just highlighted is the inquirer setup for the Employee 
       },
 
       {
@@ -51,7 +51,7 @@ const promptInfo = () => {
       {
         type: 'input',
         name: 'office',
-        message: 'What is your office number?',
+        message: 'What is your office number?', //this is the inquirer setup for the Manager
       },
 
       {
@@ -75,7 +75,7 @@ const promptInfo = () => {
       {
         type: 'input',
         name: 'email3',
-        message: 'What is your email?',
+        message: 'What is your email?', //this is the inquirer setup for the Engineer
       },
 
       {
@@ -105,7 +105,7 @@ const promptInfo = () => {
       {
         type: 'input',
         name: 'email4',
-        message: 'What is your email?',
+        message: 'What is your email?', //this is the inquirer setup for the intern
       },
 
       {
@@ -121,9 +121,10 @@ const promptInfo = () => {
       },
 
     ]);
-  };
+  };//below, we can generate the corresponding HTML file with jQuery references for each of the inquirer inputs. Where we have the 
+    // jQuery notation, we have the ${} with a reference to answers along with each of the inputs in inquirer.
 
-  const generateHTML = (answers) => 
+  const generateHTML = (answers) =>  
 
 `<!DOCTYPE html>
 <html lang="en">
@@ -216,3 +217,7 @@ const init = () => {
 };
 
 init();
+
+
+//above, we have the HTML file being written based off the inputted answers along with a console log checking our progress. 
+// writing to the HTML file is successful! Now for the tests =>

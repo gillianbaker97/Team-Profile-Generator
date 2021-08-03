@@ -26,3 +26,6 @@ class Engineer {
         colsole.log(`Engineer: ${this.Engineer}`)
     };
 };
+
+// For the Engineer, we have a similar setup. We have expanded upon the Employee's profile to add a github account as well. The same follows
+// for intern and manager. 

@@ -50,3 +50,5 @@ describe("Engineer", () => {
 
 
 });
+// the same process holds for the Engineer, Intern, and Manager tests. We want to first link each Engineer/Intern/Manager with the file path using 
+// require and then describe each get____ function which appears in the corresponding JavaScript. 
